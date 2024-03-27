@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Dialog from "../components/Dialog.astro"
+
+const textA = 'Bundle of apps (4) built with Spring Boot 2.7 + Angular 8 (Angular Material) deployed in Docker container + Portainer. Control version using GitLab and SourceTree. Integration with different SOAP APIs using Apache CFX + APIs Rest integrations with RestTemplate offered by Spring Boot. Security implemented with Spring Security + JSON Web Tokens for authentication. External configuration handled by Spring Cloud.';
+const imagesA = [
+  { src: '/skills/angular.png', alt: 'Angular' },
+  { src: '/skills/spring.png', alt: 'Spring' },
+  { src: '/skills/java.png', alt: 'Java' },
+  { src: '/skills/typeScript.png', alt: 'Typescript' },
+  { src: '/skills/oracle.png', alt: 'Oracle' },
+  { src: '/skills/docker.png', alt: 'Docker' },
+  { src: '/skills/portainer.png', alt: 'Portainer' },
+  { src: '/skills/jenkins.png', alt: 'Jenkins' },
+  { src: '/skills/git.png', alt: 'Git' }
+];
+
+const textB = 'Maintenance Web Application built with Grails 4+, Spring Boot and Oracle DB. Security implemented via Spring Security + Apache Shiro for authentication. Use of JQuery + Javascript and JQuery UI for User Interface';
+const imagesB = [
+  { src: '/skills/grails.png', alt: 'Grails' },
+  { src: '/skills/spring.png', alt: 'Spring' },
+  { src: '/skills/java.png', alt: 'Java' },
+  { src: '/skills/groovy.png', alt: 'Groovy' },
+  { src: '/skills/javascript.png', alt: 'Javascript' },
+  { src: '/skills/jQuery.png', alt: 'jQuery' },
+  { src: '/skills/oracle.png', alt: 'Oracle' },
+  { src: '/skills/git.png', alt: 'Git' }
+];
+
+const textC = 'Web application built with Spring Boot 2.7 + Angular 14 (PrimeNG UI for user interface) and Java 17. Control version using GitLab and SourceTree. Integration with different SOAP APIs using Apache CFX + APIs Rest integrations with RestTemplate offered by Spring Boot. Security implemented with Spring Security + JSON Web Tokens for authentication. External configuration handled by Spring Cloud.';
+const imagesC = [
+  { src: '/skills/angular.png', alt: 'Angular' },
+  { src: '/skills/spring.png', alt: 'Spring' },
+  { src: '/skills/java.png', alt: 'Java' },
+  { src: '/skills/typeScript.png', alt: 'Typescript' },
+  { src: '/skills/oracle.png', alt: 'Oracle' },
+  { src: '/skills/git.png', alt: 'Git' }
+];
+---
+
+<Layout title="Bastian García Pérez - Projects">
+  <main class="scale-in-ver-center">
+    <h1 class="mb-16">
+      <span class="border-4 px-20 border-[#3AAFA9] border-t-0 border-b-0"
+        >Projects</span
+      >
+    </h1>
+
+    <div class="w-1/2 m-auto">
+      Committed to the confidentiality of clients and projects I have worked on,
+      below I present some examples of the projects I have participated professionally, citing different
+      technologies employed over time in all of them. Please hover over different projects to see the information in detail.
+    </div>
+
+    <div class="flex justify-center ml-72 mt-16 mb-56">
+      <ol
+        class="relative text-white border-s border-[#3AAFA9] dark:border-gray-700 dark:text-gray-400"
+      >
+        <li class="mb-10 -ms-56" data-popover-target="pop-a">
+          <span
+            class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
+              ><path
+                d="M5 22h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-2a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2zM5 5h2v2h10V5h2v15H5V5z"
+              ></path><path
+                d="m11 13.586-1.793-1.793-1.414 1.414L11 16.414l5.207-5.207-1.414-1.414z"
+              ></path></svg
+            >
+          </span>
+          <h3 class="font-medium leading-tight">Bundle of Projects A</h3>
+          <p class="text-sm">02/2022 - 04/2023</p>
+        </li>
+        <li class="mb-10 ms-8" data-popover-target="pop-b">
+          <span
+            class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
+              ><path
+                d="M5 22h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-2a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2zM5 5h2v2h10V5h2v15H5V5z"
+              ></path><path
+                d="m11 13.586-1.793-1.793-1.414 1.414L11 16.414l5.207-5.207-1.414-1.414z"
+              ></path></svg
+            >
+          </span>
+          <h3 class="font-medium leading-tight">Project B</h3>
+          <p class="text-sm">04/2023 - On Progress</p>
+        </li>
+        <li class="-ms-52" data-popover-target="pop-c">
+          <span
+            class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
+              ><path
+                d="M5 22h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-2a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2zM5 5h2v2h10V5h2v15H5V5z"
+              ></path><path
+                d="m11 13.586-1.793-1.793-1.414 1.414L11 16.414l5.207-5.207-1.414-1.414z"
+              ></path></svg
+            >
+          </span>
+          <h3 class="font-medium leading-tight">Project C</h3>
+          <p class="text-sm">04/2023 - On Progress</p>
+        </li>
+      </ol>
+    </div>
+  </main>
+</Layout>
+
+<Dialog id="pop-a" text={textA} images={imagesA}/>
+<Dialog id="pop-b" text={textB} images={imagesB}/>
+<Dialog id="pop-c" text={textC} images={imagesC}/>

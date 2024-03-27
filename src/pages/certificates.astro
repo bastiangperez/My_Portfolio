@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Aws from "../../public/certs/AWS.png"
+import Google from "../../public/certs/Google Cloud.png"
+import Linkedin from "../../public/certs/LinkedIn.png"
+import Gob from "../../public/certs/MTES.Gob.Web-72px.jpg"
+---
+
+<Layout title="Bastian García Pérez - Certifications">
+  <main class="scale-in-ver-center">
+    <h1 class="mb-16">
+      <span class="border-4 px-20 border-[#3AAFA9] border-t-0 border-b-0"
+        >Certifications</span
+      >
+    </h1>
+    <div class="flex flex-col gap-4">
+    <Card title="AWS CERTIFIED DEVELOPER - ASSOCIATE" body="Amazon - ON PROGRESS" href="#" image={Aws.src}></Card>
+    <Card title="SOFTWARE PATTERNS" body="IFCT078PO - Secretaría de Trabajo, Empleo y Seguridad Social de la Nación - 150 hours" href="Certificado2.pdf" image={Gob.src}></Card>
+    <Card title="CLOUD COMPUTING" body="Google Activate - 40 hours" href="https://skillshop.exceedlms.com/student/award/A6VzsN1JNtAJ4Si1HZm161LD" image={Google.src}></Card>
+    <Card title="LEARNING SALESFORCE FOR ADMINS" body="LinkedIn Learning - 5 hours" href="https://www.linkedin.com/learning/certificates/be91d9e39e974c819a8e00f47d96f7462f0128e9c162389abc253d64137b5efd?trk=backfilled_certificate" image={Linkedin.src}></Card>
+    <Card title="SALESFORCE ESENTIAL" body="LinkedIn Learning - 2 hours" href="https://www.linkedin.com/learning/certificates/5f6c1d964df8fdcdc97ee44c6d66706a73d6cf7c6d38442cd4f158124a2341e7?trk=backfilled_certificate" image={Linkedin.src}></Card>
+  </div>
+  </main>
+</Layout>
+
+<style>
+    main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

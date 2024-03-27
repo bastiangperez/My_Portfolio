@@ -1,0 +1,62 @@
+<nav class="h-[60px] flex justify-between flex-wrap m-12 items-center">
+  <div class="relative border-[#3AAFA9] border-4 border-t-0 border-b-0 w-[100px] h-[60px] transition-[width] duration-1000 overflow-hidden hover:w-[65%]">
+    <p>Menu:</p>
+
+    <ul id="inner" class="block list-none p-0 mr-auto ml-auto mt-[-87px] w-[700px] h-[60px]">
+      <li><a href="/">About me</a></li>
+      <li><a href="/skills">Skills</a></li>
+      <li><a href="/certificates">Certs</a></li>
+      <li><a href="/projects">Projects</a></li>
+    </ul>
+  </div>
+  <h1>Bastian <span class="text-gradient">García Pérez</span></h1>
+</nav>
+
+<style>
+
+nav div:hover li {
+    left: 0px;
+}
+
+nav p {
+  font-size: 1.6em;
+  font-weight: 100;
+  color: white;
+  padding-top: 17px;
+  padding-left: 7px;
+  height: 50px;
+  margin-top: -3px;
+}
+
+#inner li {
+  position: relative;
+  left: 100px;
+  display: inline-block;
+  width: 120px;
+  padding: 0px 0px;
+  text-align: center;
+  margin: 12px 10px 0px 35px;
+  overflow: hidden;
+  /*border: 1px solid black;*/
+}
+
+#inner li a {
+  display: inline-block;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px 10px 5px;
+  margin: 30px auto 0px;
+  border: 3px solid #4a4a4a;
+  border-top: none;
+  border-bottom: none;
+  vertical-align: middle;
+  width: 120px;
+  height: 30px;
+}
+
+#inner li a:hover {
+  color: #1ccecb;
+  border-color: #1ccecb;
+}
+</style>
