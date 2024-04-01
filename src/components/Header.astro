@@ -1,15 +1,24 @@
-<nav class="h-[60px] flex justify-between flex-wrap m-12 items-center">
-  <div class="relative border-[#3AAFA9] border-4 border-t-0 border-b-0 w-[100px] h-[60px] transition-[width] duration-1000 overflow-hidden hover:w-[65%]">
+<nav class="h-[60px] m-12">
+  <div class="hidden md:block relative border-[#3AAFA9] border-4 border-t-0 border-b-0 w-[100px] h-[60px] transition-[width] duration-1000 overflow-hidden hover:w-[52%]">
     <p>Menu:</p>
-
-    <ul id="inner" class="block list-none p-0 mr-auto ml-auto mt-[-87px] w-[700px] h-[60px]">
-      <li><a href="/">About me</a></li>
+    <ul id="inner" class="block list-none p-0 mr-auto ml-auto mt-[-87px] h-[60px]">
+      <li><a href="/">Home</a></li>
+      <li><a href="/aboutme">About me</a></li>
       <li><a href="/skills">Skills</a></li>
       <li><a href="/certificates">Certs</a></li>
       <li><a href="/projects">Projects</a></li>
     </ul>
   </div>
-  <h1>Bastian <span class="text-gradient">García Pérez</span></h1>
+
+  <div class="md:hidden mt-20 w-full">
+    <ul class="block list-none mr-auto ml-auto w-fit mt-[-87px] h-[60px]">
+      <li class="inline"><a href="/">Home</a></li>
+      <li class="inline"><a href="/aboutme">About me</a></li>
+      <li class="inline"><a href="/skills">Skills</a></li>
+      <li class="inline"><a href="/certificates">Certs</a></li>
+      <li class="inline"><a href="/projects">Projects</a></li>
+    </ul>
+  </div>
 </nav>
 
 <style>

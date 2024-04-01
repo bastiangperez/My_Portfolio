@@ -3,14 +3,14 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Bastian García Pérez - About me">
-  <main class="flex items-center justify-between">
-    <img
-      class="w-[450px] mb-3 rounded-full shadow-lg animate-left-opacity mr-24"
-      src="/profile.jpg"
-      alt="Profile"
-    />
+  <main>
     <div class="instructions scale-in-ver-center">
-      <div class="flex items-center gap-6">
+      <div class="flex items-center gap-3">
+        <img
+        class="w-24 mb-3 rounded-full shadow-lg"
+        src="/profile.jpg"
+        alt="Profile"
+      />
         <a href="mailto:bastiangperez@gmail.com">
           <button title="Send email">
             <svg
@@ -41,40 +41,41 @@ import Layout from "../layouts/Layout.astro";
             >
           </button>
         </a>
-      </div>
-      <div>
-        Hi, I'm <strong>Bastian García Pérez</strong>
+      </div><p>
+        Hi, I'm <strong>Bastian García Pérez</strong><br />
+        <br />
+        I'm a selft-taught 2+ years experience software developer who started his
+        profesional career after studying Desarrollo de Aplicaciones Multiplataforma
+        degree in Madrid, Spain. Before that I spent my childhood time trying to
+        develop websites on my own as a hobbie, and after completing my studies as
+        a Biologist I decided to focus completely on reinventing myself as a developer.
+        Since that I have focused my efforts and learning in Java technologies, specially
+        Spring Boot, to build backend services.
         <br />
         <br />
-        A web developer specializing in backend services with Spring Boot and HTML,
-        CSS, Angular, Typescript, Firebase, and more.
+        To support that I also developed frontend user interfaces using different
+        frameworks, but most of the time I have used Angular + Typescript as my main
+        frontend technologies. Since then I'm trying to improve my knowledge learning
+        new techs like Astro, JS in order to get a solid background in this area.
         <br />
         <br />
-        I'm passionate about learning new techs and experiences. Feel free to navigate
-        over the web to know me better and don't doubt to ask me anything if you
-        want to!
-      </div>
+        Personally I consider myself a kind and collaborative worker who loves helping
+        and getting helped and who is eager to continue growing and learning in the
+        field of web development.
+        <br />
+        <br />
+        Aside from developing, some other activities that I love to do are playing
+        tennis, basketball and of course spend time with family.
+        <br />
+        <br />
+        If you have any doubt feel free to ask me via mail using then button located
+        in the top of the card. I'm excited to answer!
+      </p>
     </div>
   </main>
 </Layout>
 
 <style>
-   @keyframes slide-from-left {
-    from {
-      
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  .animate-left-opacity {
-    animation: slide-from-left 1.0s ease-in-out forwards;
-  }
-
   .instructions {
     margin-bottom: 2rem;
     border: 1px solid rgba(var(--accent-light), 25%);
